@@ -52,7 +52,7 @@ def check_df(df):
         df: pandas dataframe
     """
 #    print(df[df.isnull().any(axis=1)])
-#    print(df.isnull().any(axis=0))
+    print(df.isnull().any(axis=0))
     assert df[df.isnull().any(axis=1)].index.tolist()==[]
 
 def feature_engineering(df):
